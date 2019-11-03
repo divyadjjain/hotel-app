@@ -1,0 +1,630 @@
+
+<!DOCTYPE html>
+<!--[if IE 7]><html class="ie ie7 ltie8 ltie9" lang="en-US"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 ltie9" lang="en-US"><![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+
+    <title>Hotel Bookings</title>
+    <link rel = "icon" type = "image/png" href = "/icon.png">
+    <!-- For apple devices -->
+    <link rel = "apple-touch-icon" type = "image/png" href = "/icon.png"/>
+    <link rel='stylesheet' href='plugins\gdlr-hostel\gdlr-hotel.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='css\booking_css.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='plugins\superfish\css\superfish.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='plugins\dl-menu\component.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='plugins\font-awesome-new\css\font-awesome.min.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='plugins\fancybox\jquery.fancybox.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='plugins\flexslider\flexslider.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='css\style-responsive.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='css\style-custom.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='plugins\masterslider\public\assets\css\masterslider.main.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='css\custom.css?ver=2.6' type='text/css' media='all'>
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,700|Open+Sans:300,300i,400,400i,600,700,800|Droid+Serif:300,300i,400,600,700" rel="stylesheet">
+
+
+    <!-- load the script for older ie version -->
+    <!--[if lt IE 9]>
+	<script src="https://demo.goodlayers.com/hotelmaster/wp-content/themes/hotelmaster/javascript/html5.js" type="text/javascript"></script>
+	<script src="https://demo.goodlayers.com/hotelmaster/wp-content/themes/hotelmaster/plugins/easy-pie-chart/excanvas.js" type="text/javascript"></script>
+	<![endif]-->
+</head>
+
+<body data-rsssl="1" class="home page-template-default page page-id-3720 _masterslider _msp_version_3.2.2  header-style-1">
+    <div class="body-wrapper  float-menu gdlr-icon-dark" data-home="https://demo.goodlayers.com/hotelmaster/modern">
+        <header class="gdlr-header-wrapper">
+            <!-- top navigation -->
+
+            <!-- logo -->
+            <div class="gdlr-header-inner" style="hight:100px">
+                <div class="gdlr-header-container container">
+                    <!-- logo -->
+                    <div class="gdlr-logo">
+                        <div class="gdlr-logo-inner">
+                            <a href="home">
+                                <img src="upload\logo-modern.png" alt="" width="380" height="83"> </a>
+                            <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
+                                <button class="dl-trigger">Open Menu</button>
+                                <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
+                                    <li class="menu-ite"><a href="home">Home</a></li>
+                                    <li class="menu-item menu-item-has-children"><a href="about-us.html">Pages</a>
+                                        <ul class="dl-submenu">                                            
+                                            <li class="menu-item"><a href="about-us.html">About Us</a></li>
+                                            <li class="menu-item"><a href="contact-page.html">Contact Page 1</a></li>
+                                            <li class="menu-item"><a href="contact-page-2.html">Contact Page 2</a></li>
+                                            <li class="menu-item menu-item-has-children"><a href="portfolio-grid-3-columns-no-space.html">Portfolio</a>
+                                                <ul class="dl-submenu">
+                                                    <li class="menu-item menu-item-has-children"><a href="portfolio-grid-3-columns.html">Portfolio Classic</a>
+                                                        <ul class="dl-submenu">
+                                                            <li class="menu-item"><a href="portfolio-grid-1-column.html">Portfolio Grid 1 Column (Both Sidebar)</a></li>
+                                                            <li class="menu-item"><a href="portfolio-grid-2-columns.html">Portfolio Grid 2 Columns (Right Sidebar)</a></li>
+                                                            <li class="menu-item"><a href="portfolio-grid-3-columns.html">Portfolio Grid 3 Columns</a></li>
+                                                            <li class="menu-item"><a href="portfolio-grid-4-columns.html">Portfolio Grid 4 Columns</a></li>
+                                                            <li class="menu-item"><a href="portfolio-grid-2-columns-no-space.html">Portfolio Grid 2 Columns, No Space</a></li>
+                                                            <li class="menu-item"><a href="portfolio-grid-3-columns-no-space.html">Portfolio Grid 3 Columns, No Space</a></li>
+                                                            <li class="menu-item"><a href="portfolio-grid-4-columns-no-space.html">Portfolio Grid 4 Columns, No Space</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-item menu-item-has-children"><a href="portfolio-modern-3-columns.html">Portfolio Modern</a>
+                                                        <ul class="dl-submenu">
+                                                            <li class="menu-item"><a href="portfolio-modern-3-columns.html">Portfolio Modern 3 Columns</a></li>
+                                                            <li class="menu-item"><a href="portfolio-modern-4-columns.html">Portfolio Modern 4 Columns</a></li>
+                                                            <li class="menu-item"><a href="portfolio-modern-3-columns-no-space.html">Portfolio Modern 3 Columns, No Space</a></li>
+                                                            <li class="menu-item"><a href="portfolio-modern-4-columns-no-space.html">Portfolio Modern 4 Columns, No Space</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-item menu-item-has-children"><a href="portfolio-modern-3-columns-with-filter.html">Portfolio With Filter</a>
+                                                        <ul class="dl-submenu">
+                                                            <li class="menu-item"><a href="portfolio-grid-1-columns-with-filter.html">Portfolio Grid 1 Col With Filter</a></li>
+                                                            <li class="menu-item"><a href="portfolio-grid-2-columns-with-filter.html">Portfolio Grid 2 Cols With Filter</a></li>
+                                                            <li class="menu-item"><a href="portfolio-grid-3-columns-with-filter.html">Portfolio Grid 3 Cols With Filter</a></li>
+                                                            <li class="menu-item"><a href="portfolio-grid-4-columns-with-filter.html">Portfolio Grid 4 Cols With Filter</a></li>
+                                                            <li class="menu-item"><a href="portfolio-modern-3-columns-with-filter.html">Portfolio Modern 3 Cols With Filter</a></li>
+                                                            <li class="menu-item"><a href="portfolio-modern-4-columns-with-filter.html">Portfolio Modern 4 Cols With Filter</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item"><a href="404error.html">404 Page</a></li>
+                                            <li class="menu-item"><a href="testimonial.html">Testimonial</a></li>
+                                            <li class="menu-item menu-item-has-children"><a href="gallery-3-columns-with-caption.html">Gallery</a>
+                                                <ul class="dl-submenu">
+                                                    <li class="menu-item"><a href="gallery-2-columns-without-caption.html">Gallery 2 Columns Without Caption</a></li>
+                                                    <li class="menu-item"><a href="gallery-2-columns-with-caption.html">Gallery 2 Columns With Caption</a></li>
+                                                    <li class="menu-item"><a href="gallery-3-columns-without-caption.html">Gallery 3 Columns Without Caption</a></li>
+                                                    <li class="menu-item"><a href="gallery-3-columns-with-caption.html">Gallery 3 Columns With Caption</a></li>
+                                                    <li class="menu-item"><a href="gallery-4-columns-without-caption.html">Gallery 4 Columns Without Caption</a></li>
+                                                    <li class="menu-item"><a href="gallery-4-columns-with-caption.html">Gallery 4 Columns With Caption</a></li>
+                                                    <li class="menu-item"><a href="gallery-5-columns-without-caption.html">Gallery 5 Columns Without Caption</a></li>
+                                                    <li class="menu-item"><a href="gallery-5-columns-with-caption.html">Gallery 5 Columns With Caption</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children"><a href="#">Branches</a>
+                                        <ul class="dl-submenu">
+                                            <li class="menu-item"><a href="paris-branch.html">Paris Branch</a></li>
+                                            <li class="menu-item"><a href="new-york-branch.html">New York Branch</a></li>
+                                            <li class="menu-item"><a href="london.html">London</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children"><a href="room-classic-3-columns.html">Rooms</a>
+                                        <ul class="dl-submenu">
+                                            <li class="menu-item menu-item-has-children"><a href="room-modern-3-columns.html">Room Modern</a>
+                                                <ul class="dl-submenu">
+                                                    <li class="menu-item"><a href="room-modern-1-column.html">Room Modern 1 Column</a></li>
+                                                    <li class="menu-item"><a href="room-modern-2-columns.html">Room Modern 2 Columns</a></li>
+                                                    <li class="menu-item"><a href="room-modern-3-columns.html">Room Modern 3 Columns</a></li>
+                                                    <li class="menu-item"><a href="room-modern-4-columns-2.html">Room Modern 4 Columns</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children"><a href="room-classic-3-columns.html">Room Classic 3 Columns</a>
+                                                <ul class="dl-submenu">
+                                                    <li class="menu-item"><a href="room-classic-1-column.html">Room Classic 1 Column</a></li>
+                                                    <li class="menu-item"><a href="room-classic-2-columns.html">Room Classic 2 Columns</a></li>
+                                                    <li class="menu-item"><a href="room-classic-3-columns.html">Room Classic 3 Columns</a></li>
+                                                    <li class="menu-item"><a href="room-classic-4-columns.html">Room Classic 4 Columns</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item"><a href="room-modern-4-columns.html">Room Medium Thumbnail</a></li>
+                                            <li class="menu-item"><a href="superior-room-two-double-beds.html">Rooms Single</a></li>                                            
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item current-menu-item"><a href="booking.html">Reservation</a></li>
+                                    <li class="menu-item menu-item-has-children"><a href="blog-full-with-right-sidebar.html">Blog</a>
+                                        <ul class="dl-submenu">
+                                            <li class="menu-item menu-item-has-children"><a href="#">Blog Full</a>
+                                                <ul class="dl-submenu">
+                                                    <li class="menu-item"><a href="blog-full-with-right-sidebar.html">Blog Full With Right Sidebar</a></li>
+                                                    <li class="menu-item"><a href="blog-full-with-left-sidebar.html">Blog Full With Left Sidebar</a></li>
+                                                    <li class="menu-item"><a href="blog-full-with-both-sidebar.html">Blog Full With Both Sidebar</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children"><a href="#">Blog Column</a>
+                                                <ul class="dl-submenu">
+                                                    <li class="menu-item"><a href="blog-1-column.html">Blog 1 Column (Right Sidebar)</a></li>
+                                                    <li class="menu-item"><a href="blog-2-columns.html">Blog 2 Columns (Right Sidebar)</a></li>
+                                                    <li class="menu-item"><a href="blog-3-columns.html">Blog 3 Columns</a></li>
+                                                    <li class="menu-item"><a href="blog-4-columns.html">Blog 4 Columns</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children"><a href="#">Blog Masonry</a>
+                                                <ul class="dl-submenu">
+                                                    <li class="menu-item"><a href="blog-2-columns-masonry.html">Blog 2 Columns &#8211; Masonry (Right Sidebar)</a></li>
+                                                    <li class="menu-item"><a href="blog-3-columns-masonry.html">Blog 3 Columns &#8211; Masonry</a></li>
+                                                    <li class="menu-item"><a href="blog-4-columns-masonry.html">Blog 4 Columns &#8211; Masonry</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children"><a href="#">Blog Medium</a>
+                                                <ul class="dl-submenu">
+                                                    <li class="menu-item"><a href="blog-medium-with-right-sidebar.html">Blog Medium With Right Sidebar</a></li>
+                                                    <li class="menu-item"><a href="blog-medium-with-left-sidebar.html">Blog Medium With Left Sidebar</a></li>
+                                                    <li class="menu-item"><a href="blog-medium-with-both-sidebar.html">Blog Medium With Both Sidebar</a></li>
+                                                    <li class="menu-item"><a href="blog-medium-without-sidebar.html">Blog Medium Without Sidebar</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children"><a href="typography.html">Shortcodes</a>
+                                        <ul class="dl-submenu">
+                                            <li class="menu-item menu-item-has-children"><a href="#">Shortcode Set 1</a>
+                                                <ul class="dl-submenu">
+                                                    <li class="menu-item"><a href="accordiontoggle-box.html">Accordion/Toggle Box</a></li>
+                                                    <li class="menu-item"><a href="audio-shortcode.html">Audio Shortcode</a></li>
+                                                    <li class="menu-item"><a href="button.html">Button</a></li>
+                                                    <li class="menu-item"><a href="column-shortcode.html">Column Shortcode</a></li>
+                                                    <li class="menu-item"><a href="divider.html">Divider</a></li>
+                                                    <li class="menu-item"><a href="gallery-shortcode.html">Gallery Shortcode</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children"><a href="#">Shortcode Set 2</a>
+                                                <ul class="dl-submenu">
+                                                    <li class="menu-item"><a href="heading-tag.html">Heading Tag</a></li>
+                                                    <li class="menu-item"><a href="icons-icon-boxes.html">icons &#038; icon boxes</a></li>
+                                                    <li class="menu-item"><a href="lightbox-frames.html">Lightbox &#038; Frames</a></li>
+                                                    <li class="menu-item"><a href="notification-boxes.html">Notification Boxes</a></li>
+                                                    <li class="menu-item"><a href="personnel.html">Personnel</a></li>
+                                                    <li class="menu-item"><a href="post-slider.html">Post Slider</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children"><a href="#">Shortcode Set 3</a>
+                                                <ul class="dl-submenu">
+                                                    <li class="menu-item"><a href="price-table.html">Price Table</a></li>
+                                                    <li class="menu-item"><a href="process.html">Process</a></li>
+                                                    <li class="menu-item"><a href="progress-circle.html">Progress Circle</a></li>
+                                                    <li class="menu-item"><a href="skills.html">Skills</a></li>
+                                                    <li class="menu-item"><a href="slider-shortcode.html">Slider Shortcode</a></li>
+                                                    <li class="menu-item"><a href="space.html">Space</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children"><a href="#">Shortcode Set 4</a>
+                                                <ul class="dl-submenu">
+                                                    <li class="menu-item"><a href="styled-box.html">Styled Box</a></li>
+                                                    <li class="menu-item"><a href="stunning-text.html">Stunning Text</a></li>
+                                                    <li class="menu-item"><a href="table.html">Table</a></li>
+                                                    <li class="menu-item"><a href="tabs.html">Tabs</a></li>
+                                                    <li class="menu-item"><a href="testimonial-2.html">Testimonial &#038; Quote</a></li>
+                                                    <li class="menu-item"><a href="typography.html">Typography</a></li>
+                                                    <li class="menu-item"><a href="video.html">Video</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- navigation -->
+                    <div class="gdlr-navigation-wrapper">
+                        <nav class="gdlr-navigation" id="gdlr-main-navigation" role="navigation">
+                            <ul id="menu-main-menu-1" class="sf-menu gdlr-main-menu">
+                                <li class="menu-ite"><a href="home">Home</a></li>
+                                <li class="menu-item menu-item-has-children gdlr-normal-menu"><a href="about-us.html" class="sf-with-ul-pre">Pages</a>
+                                    <ul class="sub-menu">                                        
+                                        <li class="menu-item"><a href="about-us.html">About Us</a></li>
+                                        <li class="menu-item"><a href="contact-page.html">Contact Page 1</a></li>
+                                        <li class="menu-item"><a href="contact-page-2.html">Contact Page 2</a></li>
+                                        <li class="menu-item menu-item-has-children"><a href="portfolio-grid-3-columns-no-space.html" class="sf-with-ul-pre">Portfolio</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item menu-item-has-children"><a href="portfolio-grid-3-columns.html" class="sf-with-ul-pre">Portfolio Classic</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item"><a href="portfolio-grid-1-column.html">Portfolio Grid 1 Column (Both Sidebar)</a></li>
+                                                        <li class="menu-item"><a href="portfolio-grid-2-columns.html">Portfolio Grid 2 Columns (Right Sidebar)</a></li>
+                                                        <li class="menu-item"><a href="portfolio-grid-3-columns.html">Portfolio Grid 3 Columns</a></li>
+                                                        <li class="menu-item"><a href="portfolio-grid-4-columns.html">Portfolio Grid 4 Columns</a></li>
+                                                        <li class="menu-item"><a href="portfolio-grid-2-columns-no-space.html">Portfolio Grid 2 Columns, No Space</a></li>
+                                                        <li class="menu-item"><a href="portfolio-grid-3-columns-no-space.html">Portfolio Grid 3 Columns, No Space</a></li>
+                                                        <li class="menu-item"><a href="portfolio-grid-4-columns-no-space.html">Portfolio Grid 4 Columns, No Space</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children"><a href="portfolio-modern-3-columns.html" class="sf-with-ul-pre">Portfolio Modern</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item"><a href="portfolio-modern-3-columns.html">Portfolio Modern 3 Columns</a></li>
+                                                        <li class="menu-item"><a href="portfolio-modern-4-columns.html">Portfolio Modern 4 Columns</a></li>
+                                                        <li class="menu-item"><a href="portfolio-modern-3-columns-no-space.html">Portfolio Modern 3 Columns, No Space</a></li>
+                                                        <li class="menu-item"><a href="portfolio-modern-4-columns-no-space.html">Portfolio Modern 4 Columns, No Space</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children"><a href="portfolio-modern-3-columns-with-filter.html" class="sf-with-ul-pre">Portfolio With Filter</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item"><a href="portfolio-grid-1-columns-with-filter.html">Portfolio Grid 1 Col With Filter</a></li>
+                                                        <li class="menu-item"><a href="portfolio-grid-2-columns-with-filter.html">Portfolio Grid 2 Cols With Filter</a></li>
+                                                        <li class="menu-item"><a href="portfolio-grid-3-columns-with-filter.html">Portfolio Grid 3 Cols With Filter</a></li>
+                                                        <li class="menu-item"><a href="portfolio-grid-4-columns-with-filter.html">Portfolio Grid 4 Cols With Filter</a></li>
+                                                        <li class="menu-item"><a href="portfolio-modern-3-columns-with-filter.html">Portfolio Modern 3 Cols With Filter</a></li>
+                                                        <li class="menu-item"><a href="portfolio-modern-4-columns-with-filter.html">Portfolio Modern 4 Cols With Filter</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item"><a href="404error.html">404 Page</a></li>
+                                        <li class="menu-item"><a href="testimonial.html">Testimonial</a></li>
+                                        <li class="menu-item menu-item-has-children"><a href="gallery-3-columns-with-caption.html" class="sf-with-ul-pre">Gallery</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="gallery-2-columns-without-caption.html">Gallery 2 Columns Without Caption</a></li>
+                                                <li class="menu-item"><a href="gallery-2-columns-with-caption.html">Gallery 2 Columns With Caption</a></li>
+                                                <li class="menu-item"><a href="gallery-3-columns-without-caption.html">Gallery 3 Columns Without Caption</a></li>
+                                                <li class="menu-item"><a href="gallery-3-columns-with-caption.html">Gallery 3 Columns With Caption</a></li>
+                                                <li class="menu-item"><a href="gallery-4-columns-without-caption.html">Gallery 4 Columns Without Caption</a></li>
+                                                <li class="menu-item"><a href="gallery-4-columns-with-caption.html">Gallery 4 Columns With Caption</a></li>
+                                                <li class="menu-item"><a href="gallery-5-columns-without-caption.html">Gallery 5 Columns Without Caption</a></li>
+                                                <li class="menu-item"><a href="gallery-5-columns-with-caption.html">Gallery 5 Columns With Caption</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children gdlr-normal-menu"><a href="#" class="sf-with-ul-pre">Branches</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="paris-branch.html">Paris Branch</a></li>
+                                        <li class="menu-item"><a href="new-york-branch.html">New York Branch</a></li>
+                                        <li class="menu-item"><a href="london.html">London</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children gdlr-normal-menu"><a href="room-classic-3-columns.html" class="sf-with-ul-pre">Rooms</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item menu-item-has-children"><a href="room-modern-3-columns.html" class="sf-with-ul-pre">Room Modern</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="room-modern-1-column.html">Room Modern 1 Column</a></li>
+                                                <li class="menu-item"><a href="room-modern-2-columns.html">Room Modern 2 Columns</a></li>
+                                                <li class="menu-item"><a href="room-modern-3-columns.html">Room Modern 3 Columns</a></li>
+                                                <li class="menu-item"><a href="room-modern-4-columns-2.html">Room Modern 4 Columns</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="room-classic-3-columns.html" class="sf-with-ul-pre">Room Classic 3 Columns</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="room-classic-1-column.html">Room Classic 1 Column</a></li>
+                                                <li class="menu-item"><a href="room-classic-2-columns.html">Room Classic 2 Columns</a></li>
+                                                <li class="menu-item"><a href="room-classic-3-columns.html">Room Classic 3 Columns</a></li>
+                                                <li class="menu-item"><a href="room-classic-4-columns.html">Room Classic 4 Columns</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item"><a href="room-modern-4-columns.html">Room Medium Thumbnail</a></li>
+                                        <li class="menu-item"><a href="superior-room-two-double-beds.html">Rooms Single</a></li>                                        
+                                    </ul>
+                                </li>
+                          <!--       <li class="menu-item menu-item-has-children gdlr-mega-menu"><a href="typography.html" class="sf-with-ul-pre">Shortcodes</a>
+                                    <div class="sf-mega">
+                                        <ul class="sub-menu">
+                                            <li class="menu-item menu-item-has-children" data-column="three columns" data-size="1/4"><a href="#" class="sf-with-ul-pre">Shortcode Set 1</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item"><a href="accordiontoggle-box.html">Accordion/Toggle Box</a></li>
+                                                    <li class="menu-item"><a href="audio-shortcode.html">Audio Shortcode</a></li>
+                                                    <li class="menu-item"><a href="button.html">Button</a></li>
+                                                    <li class="menu-item"><a href="column-shortcode.html">Column Shortcode</a></li>
+                                                    <li class="menu-item"><a href="divider.html">Divider</a></li>
+                                                    <li class="menu-item"><a href="gallery-shortcode.html">Gallery Shortcode</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children" data-column="three columns" data-size="1/4"><a href="#" class="sf-with-ul-pre">Shortcode Set 2</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item"><a href="heading-tag.html">Heading Tag</a></li>
+                                                    <li class="menu-item"><a href="icons-icon-boxes.html">icons &#038; icon boxes</a></li>
+                                                    <li class="menu-item"><a href="lightbox-frames.html">Lightbox &#038; Frames</a></li>
+                                                    <li class="menu-item"><a href="notification-boxes.html">Notification Boxes</a></li>
+                                                    <li class="menu-item"><a href="personnel.html">Personnel</a></li>
+                                                    <li class="menu-item"><a href="post-slider.html">Post Slider</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children" data-column="three columns" data-size="1/4"><a href="#" class="sf-with-ul-pre">Shortcode Set 3</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item"><a href="price-table.html">Price Table</a></li>
+                                                    <li class="menu-item"><a href="process.html">Process</a></li>
+                                                    <li class="menu-item"><a href="progress-circle.html">Progress Circle</a></li>
+                                                    <li class="menu-item"><a href="skills.html">Skills</a></li>
+                                                    <li class="menu-item"><a href="slider-shortcode.html">Slider Shortcode</a></li>
+                                                    <li class="menu-item"><a href="space.html">Space</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children" data-column="three columns" data-size="1/4"><a href="#" class="sf-with-ul-pre">Shortcode Set 4</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item"><a href="styled-box.html">Styled Box</a></li>
+                                                    <li class="menu-item"><a href="stunning-text.html">Stunning Text</a></li>
+                                                    <li class="menu-item"><a href="table.html">Table</a></li>
+                                                    <li class="menu-item"><a href="tabs.html">Tabs</a></li>
+                                                    <li class="menu-item"><a href="testimonial-2.html">Testimonial &#038; Quote</a></li>
+                                                    <li class="menu-item"><a href="typography.html">Typography</a></li>
+                                                    <li class="menu-item"><a href="video.html">Video</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </nav>
+                        <i class="fa fa-search icon-search gdlr-menu-search-button" id="gdlr-menu-search-button"></i>
+                        <div class="gdlr-menu-search" id="gdlr-menu-search">
+                            <form method="get" id="searchform" action="https://demo.goodlayers.com/hotelmaster/modern/">
+                                <div class="search-text">
+                                    <input type="text" value="Type Keywords" name="s" autocomplete="off" data-default="Type Keywords">
+                                </div>
+                                <input type="submit" value="">
+                                <div class="clear"></div>
+                            </form>
+                        </div>
+                        <div class="gdlr-navigation-gimmick" id="gdlr-navigation-gimmick"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </header>
+        <!-- is search -->
+        <div class="content-wrapper">
+            <div class="gdlr-content">
+
+                <div class="with-sidebar-wrapper">
+                    <div class="with-sidebar-container container gdlr-class-no-sidebar">
+                        <div class="with-sidebar-left twelve columns">
+                            <div class="with-sidebar-content twelve columns">
+                                <div class="gdlr-item gdlr-item-start-content" id="gdlr-single-booking-content" data-ajax="https://demo.goodlayers.com/hotelmaster/wp-admin/admin-ajax.php">
+
+                                    <form class="gdlr-reservation-bar" data-action="gdlr_hotel_booking">
+                                        <div class="gdlr-reservation-bar-title">Your Reservation</div>
+                                        <div class="gdlr-reservation-bar-summary-form" ></div>
+                                        <div class="gdlr-reservation-bar-room-form" ></div>
+                                        <div class="gdlr-reservation-bar-date-form">
+                                            <div class="gdlr-reservation-field gdlr-resv-datepicker"><span class="gdlr-reservation-field-title">Check In</span>
+                                                <div class="gdlr-datepicker-wrapper">
+                                                    <input type="text" id="gdlr-check-in" class="gdlr-datepicker" autocomplete="off" data-dfm="d M yy" data-block="[&quot;2018-02-14&quot;,&quot;2018-02-15&quot;]" value="2018-05-03">
+                                                    <input type="hidden" class="gdlr-datepicker-alt" name="gdlr-check-in" autocomplete="off" value="2018-05-03">
+                                                </div>
+                                            </div>
+                                          <!--   <div class="gdlr-reservation-field gdlr-resv-combobox "><span class="gdlr-reservation-field-title">Night</span>
+                                                <div class="gdlr-combobox-wrapper">
+                                                    <select name="gdlr-night" id="gdlr-night">
+                                                        <option value="1" selected="">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                    </select>
+                                                </div>
+                                            </div> -->
+                                            <div class="clear"></div>
+                                            <div class="gdlr-reservation-field gdlr-resv-datepicker"><span class="gdlr-reservation-field-title">Check Out</span>
+                                                <div class="gdlr-datepicker-wrapper">
+                                                    <input type="text" id="gdlr-check-out" class="gdlr-datepicker" autocomplete="off" data-min-night="1" data-dfm="d M yy" data-block="[&quot;2018-02-14&quot;,&quot;2018-02-15&quot;]" value="2018-05-04">
+                                                    <input type="hidden" class="gdlr-datepicker-alt" name="gdlr-check-out" autocomplete="off" value="2018-05-04">
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                            <div class="gdlr-reservation-field gdlr-resv-combobox gdlr-reservation-bar-room-number"><span class="gdlr-reservation-field-title">Rooms</span>
+                                                <div class="gdlr-combobox-wrapper">
+                                                    <select name="gdlr-room-number" id="gdlr-room-number">
+                                                        <option value="1" selected="">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                            <div class="gdlr-reservation-people-amount-wrapper" id="gdlr-reservation-people-amount-wrapper">
+                                                <div class="gdlr-reservation-people-amount">
+                                                    <div class="gdlr-reservation-field gdlr-resv-combobox "><span class="gdlr-reservation-field-title">Adults</span>
+                                                        <div class="gdlr-combobox-wrapper">
+                                                            <select name="gdlr-adult-number[]">
+                                                                <option value="1">1</option>
+                                                                <option value="2" selected="">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="gdlr-reservation-field gdlr-resv-combobox "><span class="gdlr-reservation-field-title">Children</span>
+                                                        <div class="gdlr-combobox-wrapper">
+                                                            <select name="gdlr-children-number[]">
+                                                                <option value="0">0</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div><a id="gdlr-reservation-bar-button" class="gdlr-reservation-bar-button gdlr-button" href="#">Check Availability</a>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="gdlr-reservation-bar-service-form" id="gdlr-reservation-bar-service-form"></div>
+                                    </form>
+                                    <div class="gdlr-booking-content">
+                                        <div class="gdlr-booking-process-bar" id="gdlr-booking-process-bar" data-state="1">
+                                            <div data-process="1" class="gdlr-booking-process gdlr-active">1. Choose Date</div>
+                                            <div data-process="2" class="gdlr-booking-process ">2. Choose Room</div>
+                                            <div data-process="3" class="gdlr-booking-process ">3. Make a Reservation</div>
+                                            <div data-process="4" class="gdlr-booking-process ">4. Confirmation</div>
+                                        </div>
+                                        <div class="gdlr-booking-content-wrapper">
+                                            <div class="gdlr-booking-content-inner" id="gdlr-booking-content-inner">
+                                                <div class="gdlr-datepicker-range-wrapper">
+                                                    <div class="gdlr-datepicker-range" id="gdlr-datepicker-range" data-dfm="d M yy" data-block="[&quot;2018-02-14&quot;,&quot;2018-02-15&quot;]"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- gdlr-content -->
+            <div class="clear"></div>
+        </div>
+        <!-- content wrapper -->
+
+
+        <footer class="footer-wrapper">
+            <div class="footer-container container">
+                <div class="footer-column three columns" >
+                    <div class="foot-book">
+                        <h3 class="gdlr-widget-title">Book Now!</h3>
+                        <div class="clear"></div>
+                        <div class="textwidget">
+                            <p><i class="gdlr-icon fa fa-phone"></i> +1800-222-3333</p>
+                            <div class="clear"></div>
+                            <div class="gdlr-space mt-15" ></div>
+                            <p><i class="gdlr-icon fa fa-envelope-o"></i> sales@hotelmastert.com</p>
+                            <div class="clear"></div>
+                            <div class="gdlr-space mt25" ></div>
+                            <p class="foot-sicons">
+                            	<a href="#" target="_blank"><i class="gdlr-icon  fa fa-facebook-square"></i></a> 
+                            	<a href="#" target="_blank"><i class="gdlr-icon  fa fa-twitter-square"></i></a> 
+                            	<a href="#" target="_blank"><i class="gdlr-icon  fa fa-linkedin-square"></i></a> 
+                            	<a href="#" target="_blank"><i class="gdlr-icon  fa fa-google-plus-square"></i></a> 
+                            	<a href="#" target="_blank"><i class="gdlr-icon  fa fa-pinterest-square"></i></a> 
+                            	<a href="#" target="_blank"><i class="gdlr-icon  fa fa-flickr"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column three columns" id="footer-widget-2">
+                    <div id="recent-posts-5" class="widget widget_recent_entries gdlr-item gdlr-widget">
+                        <h3 class="gdlr-widget-title">Recent News</h3>
+                        <div class="clear"></div>
+                        <ul>
+                            <li>
+                                <a href="#">Sem Porta Mollis Parturient</a>
+                            </li>
+                            <li>
+                                <a href="#">Nullam Lorem Mattis Purus</a>
+                            </li>
+                            <li>
+                                <a href="#">Nibh Sem Sit Ullamcorper</a>
+                            </li>
+                            <li>
+                                <a href="#">Donec luctus imperdiet</a>
+                            </li>
+                            <li>
+                                <a href="#">Magna pars studiorum</a>
+                            </li>
+                            <li>
+                                <a href="#">Sedial eiusmod tempor</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column six columns" id="footer-widget-3">
+                    <div id="text-10" class="widget widget_text gdlr-item gdlr-widget">
+                        <h3 class="gdlr-widget-title">Our Awards</h3>
+                        <div class="clear"></div>
+                        <div class="textwidget"><img src="upload\awards-logo-dark.jpg" alt="">
+                            <div class="clear"></div>
+                            <div class="gdlr-space m220"></div>
+                            Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum.</div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="copyright-wrapper">
+                <div class="copyright-container container">
+                    <div class="copyright-left">
+                        <a class="mr10" href="home">Home</a>|
+                        <a class="mr10 ml10" href="#">Booking</a> | 
+                        <a class="mr10 ml10" href="about-us.html">About</a> | 
+                        <a class="mr10 ml10" href="contact-page.html">Contact<a></a> 
+                    </div>
+                    <div class="copyright-right">
+                        Copyright 2019 All Right Reserved </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- body-wrapper -->
+
+    <script type='text/javascript' src='js\jquery\jquery.js'></script>
+    <script type='text/javascript' src='js\jquery\jquery-migrate.min.js'></script>
+    <script type='text/javascript' src='js\jquery\ui\core.min.js'></script>
+    <script type='text/javascript' src='js\jquery\ui\datepicker.min.js'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var objectL10n = {
+            "closeText": "Done",
+            "currentText": "Today",
+            "monthNames": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+            "monthNamesShort": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+            "monthStatus": "Show a different month",
+            "dayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "dayNamesShort": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+            "dayNamesMin": ["S", "M", "T", "W", "T", "F", "S"],
+            "firstDay": "1"
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='plugins\gdlr-hostel\gdlr-hotel.js'></script>
+    <script type='text/javascript' src='plugins\superfish\js\superfish.js'></script>
+    <script type='text/javascript' src='js\hoverIntent.min.js'></script>
+    <script type='text/javascript' src='plugins\dl-menu\modernizr.custom.js'></script>
+    <script type='text/javascript' src='plugins\dl-menu\jquery.dlmenu.js'></script>
+    <script type='text/javascript' src='js\jquery.easing.js'></script>
+    <script type='text/javascript' src='js\jquery.transit.min.js'></script>
+    <script type='text/javascript' src='plugins\fancybox\jquery.fancybox.pack.js'></script>
+    <script type='text/javascript' src='plugins\fancybox\helpers\jquery.fancybox-media.js'></script>
+    <script type='text/javascript' src='plugins\fancybox\helpers\jquery.fancybox-thumbs.js'></script>
+    <script type='text/javascript' src='js\flexslider\jquery.flexslider.js'></script>
+    <script type='text/javascript' src='js\jquery.isotope.min.js'></script>
+    <script type='text/javascript' src='js\gdlr-script.js'></script>
+    <script type='text/javascript' src='plugins\gdlr-portfolio\gdlr-portfolio-script.js'></script>
+
+</body>
+</html>

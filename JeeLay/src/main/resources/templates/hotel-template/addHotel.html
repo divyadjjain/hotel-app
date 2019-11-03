@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{core-layout}"
+	xmlns:qs="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form action="#" th:action="@{/hotel/addHotel}" th:object="${hotel}"
+		method="post">
+		<table>
+			<tr>
+				<td width="10%">Hotel Name :</td>
+				<td width="90%"><input th:field="*{hotelName}" /></td>
+			</tr>
+			<tr>
+				<td width="10%">Business :</td>
+				<td width="90%"><input th:field="*{address.business}" /></td>
+			</tr>
+			<tr>
+				<td width="10%">Street Line 1 :</td>
+				<td width="90%"><input type="text"
+					th:field="*{address.streetLine1}" /></td>
+			</tr>
+			<tr>
+				<td width="10%">Street Line 2 :</td>
+				<td width="90%"><input type="text"
+					th:field="*{address.streetLine2}" /></td>
+			</tr>
+			<tr>
+				<td width="10%">State :</td>
+				<td width="90%"><input type="text" th:field="*{address.city}" /></td>
+			</tr>
+			<tr>
+				<td width="10%">Postcode :</td>
+				<td width="90%"><input type="text"
+					th:field="*{address.postcode}" /></td>
+			</tr>
+			<tr>
+				<td width="10%">Stars :</td>
+				<td width="90%"><input type="text" th:field="*{stars}" /></td>
+			</tr>
+			<tr>
+				<td width="10%">Email :</td>
+				<td width="90%"><input type="text" th:field="*{email}" /></td>
+			</tr>
+			<tr>
+				<td width="10%">Earliest check in time :</td>
+				<td width="90%"><input th:field="*{earliestCheckInTime}" /></td>
+			</tr>
+			<tr>
+				<td width="10%">Latest check in time :</td>
+				<td width="90%"><input type="text"
+					th:field="*{latestCheckInTime}" /></td>
+			</tr>
+			<tr>
+				<td width="10%">Standard check out time :</td>
+				<td width="90%"><input type="text"
+					th:field="*{standardCheckOutTime}" /></td>
+			</tr>
+			<tr>
+				<td width="10%">Latest check out time :</td>
+				<td width="90%"><input type="text"
+					th:field="*{latestCheckOutTime}" /></td>
+			</tr>
+			<tr>
+				<td width="10%">Late checkout fee :</td>
+				<td width="90%"><input type="text"
+					th:field="*{lateCheckoutFee}" /></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Add Hotel" /></td>
+			</tr>
+
+		</table>
+	</form>
+
+</body>
+</html>
